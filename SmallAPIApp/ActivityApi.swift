@@ -18,9 +18,9 @@ class Activityapi: ObservableObject {
     @Published var ActivityText = ""
 
     func loadapi() async {
-        var url = URL(string:"https:///www.boredapi.com/api/activity/")!
+        var url = URL(string:"https://www.boredapi.com/api/activity/")!
         do {
-            var (apidata, apiresp) = try await URLSession.shared.data(from:url)
+            var (apidata, _) = try await URLSession.shared.data(from:url)
             print(apidata.count)
             
             let decoder = JSONDecoder()
