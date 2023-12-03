@@ -9,30 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var activity = ""
+  @StateObject var apifile = Activityapi()
     
     var body: some View {
         VStack {
-            Text(activity)
+            Text(apifile.activityText)
         }
         .padding()
         .onAppear() {
-            loadapi()
+            Task {
+                await apifile.loadapi()
+            }
         }
     
     }
-    func loadapi() {
-        var url = URL(string:"https:///www.boredapi.com/api/activity/")!
-        do {
-            var GetActivity =  try String(contentsOf:url)
-            print(GetActivity)
-            
-            activity = GetActivity
-        } catch {
-           print("Content could not be loaded")
-        }
-    }
+ 
 }
+
+/*
+ 
+ do {
+     var GetActivity =  try String(contentsOf:url)
+     print(GetActivity)
+     
+     activity = GetActivity
+ } catch {
+    print("Content could not be loaded")
+ }
+ */
 
 #Preview {
     ContentView()

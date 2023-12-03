@@ -14,6 +14,7 @@
 		0B71A0532B18D43400796F26 /* SmallAPIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71A0522B18D43400796F26 /* SmallAPIAppTests.swift */; };
 		0B71A05D2B18D43400796F26 /* SmallAPIAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71A05C2B18D43400796F26 /* SmallAPIAppUITests.swift */; };
 		0B71A05F2B18D43400796F26 /* SmallAPIAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B71A05E2B18D43400796F26 /* SmallAPIAppUITestsLaunchTests.swift */; };
+		0BBD11222B1D24B400357390 /* ActivityApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD11212B1D24B400357390 /* ActivityApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0B71A0582B18D43400796F26 /* SmallAPIAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallAPIAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B71A05C2B18D43400796F26 /* SmallAPIAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAPIAppUITests.swift; sourceTree = "<group>"; };
 		0B71A05E2B18D43400796F26 /* SmallAPIAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallAPIAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BBD11212B1D24B400357390 /* ActivityApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				0B71A0412B18D43200796F26 /* SmallAPIAppApp.swift */,
 				0B71A0432B18D43200796F26 /* ContentView.swift */,
+				0BBD11212B1D24B400357390 /* ActivityApi.swift */,
 				0B71A0452B18D43400796F26 /* Assets.xcassets */,
 				0B71A0472B18D43400796F26 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B71A0442B18D43200796F26 /* ContentView.swift in Sources */,
+				0BBD11222B1D24B400357390 /* ActivityApi.swift in Sources */,
 				0B71A0422B18D43200796F26 /* SmallAPIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
